@@ -21,7 +21,7 @@ contract NeworkTokenIssue {
         //ensure first year can not inflate
         if(isFirstYear){
             // 2102400 blocks is about one year, suppose it takes 15 seconds to generate a new block
-            require(SafeMath.sub(block.number, lastBlockNumber) > 2102400);
+            // require(SafeMath.sub(block.number, lastBlockNumber) > 2102400);
             isFirstYear = false;
         }
 
